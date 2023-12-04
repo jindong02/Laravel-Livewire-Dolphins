@@ -1,0 +1,90 @@
+.main {
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;   
+}
+
+.custom-select {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+    color: #495057;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-select option {
+    padding: 6px 12px;
+}
+
+.custom-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #495057 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.custom-select:focus::after {
+    border-color: #007bff transparent transparent transparent;
+}
+
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 10px 0; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

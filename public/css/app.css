@@ -1,0 +1,55 @@
+.side-nav{
+    background-color: #04364A;
+}
+
+.side-nav::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+}
+
+.content-scroll {
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.content-scroll::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+}
+
+/* .plot-module-content::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+} */
+
+.side-nav .nav-link{
+    color: #fff !important;
+}
+.side-nav .nav-link:hover{
+    color: #949597 !important;
+}
+
+/* .page-content{
+    margin-left: 318px;
+} */
+
+.loading-overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 55%);
+    z-index: 9999;
+    gap: 15px;
+}
+
+.loading-overlay .spinner-grow{
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+
